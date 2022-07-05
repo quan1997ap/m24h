@@ -1,0 +1,812 @@
+@import "./css/custom.css";
+@import "./css/bulma-bulma.css";
+@import "./css/bm-menu.css";
+@import '~antd/dist/antd.css';
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=vietnamese");
+
+$primary-color: #FD6565;
+
+body {
+  background-color: #fff !important;
+  font-size: 14px;
+}
+
+.mf24 {
+  .page-faq {
+    .am-accordion .am-accordion-item .am-accordion-header {
+      font-size: 14px;
+      font-weight: bold;
+
+    }
+
+    .pad .am-accordion-content-box,
+    .pad2 .am-accordion-content-box {
+      padding: 20px;
+    }
+
+    .pad2 .am-accordion-header {
+      height: 60px;
+
+
+      div {
+        padding-top: 5px;
+        line-height: 25px;
+      }
+    }
+  }
+
+}
+
+
+
+@media (min-width: 1025px) {
+  .mf24 {
+    .top-mini {
+      a.item {
+        color: #333;
+        font-size: 13px;
+        padding-left: 10px;
+        padding-right: 12px;
+        float: right;
+        border-right: 1px solid #ccc;
+      }
+
+      a.item:hover {
+        color: #EA2424
+      }
+    }
+
+    .topbar {
+      height: 68px;
+      padding-bottom: 20px;
+
+      .topbar-logo {
+        img {
+          max-height: 50px;
+        }
+      }
+
+      .menu-item {
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+      .menu-item:hover {
+        color: #EA2424
+      }
+    }
+
+    .footerbar {
+      height: 68px;
+
+      .menu-item {
+        font-size: 14px;
+        font-weight: bold;
+      }
+
+      .menu-item:hover {
+        color: #EA2424
+      }
+    }
+
+    .home-slide1 {
+      background-image: url(./assets/images/banner/slider2@2x.jpg);
+      background-position: top;
+      width: 100%;
+      height: 460px;
+      background-size: 1904px 561px;
+    }
+
+    .home-slide2 {
+      background-image: url(./assets/images/banner/slider1@2x.jpg);
+      background-position: top;
+      width: 100%;
+      height: 460px;
+      background-size: 1904px 561px;
+    }
+
+    .home-slide3 {
+      background-image: url(./assets/images/banner/slider3@2x.jpg);
+      background-position: top;
+      width: 100%;
+      height: 460px;
+      background-size: 1904px 561px;
+    }
+
+    .product-grid {
+      .circle-96 {
+        text-align: center;
+        line-height: 96px;
+        width: 96px;
+        height: 96px;
+        background: #fff;
+        -moz-border-radius: 48px;
+        -webkit-border-radius: 48px;
+        border-radius: 48px;
+        border: 3px solid #EFEFEF;
+        margin: auto;
+      }
+
+      .product-item {
+        text-align: center;
+        font-size: 14px;
+        color: #707070;
+      }
+    }
+
+    .carousel-products {
+      .am-carousel-wrap {
+        position: absolute;
+        bottom: -40px;
+      }
+
+      .slider-list {
+        height: 172px !important;
+      }
+
+
+
+    }
+
+    .button-green {
+      font-weight: bold;
+      background: #71C665;
+      color: #fff
+    }
+
+    .button-green:hover,
+    .button-primary-color:hover {
+      color: #fff;
+    }
+
+    .button-green.am-button-primary::before {
+      border-color: #71C665;
+    }
+
+    .button-primary-color {
+      font-weight: bold;
+      color: #fff;
+      background: $primary-color
+    }
+
+    .button-primary-color.am-button-primary::before {
+      border-color: $primary-color;
+    }
+
+    .bulma-select:not(.bulma-is-multiple):not(.bulma-is-loading)::after {
+      border-color: $primary-color
+    }
+
+    .bulma-select-disabled.bulma-select:not(.bulma-is-multiple):not(.bulma-is-loading)::after {
+      border-color: #A7A7A7
+    }
+
+    .bulma-field input,
+    .bulma-field select {
+      font-size: 15px;
+    }
+
+    .primary-field {
+      .bulma-select select {
+        border-color: #FFBD6F;
+        background-color: #FFFDF8;
+      }
+    }
+
+    .quick-form {
+      .bulma-field {
+        padding-bottom: 20px;
+      }
+
+      .bulma-field input,
+      .bulma-field select {
+        height: 50px;
+
+      }
+
+      .bulma-select:not(.bulma-is-multiple):not(.bulma-is-loading)::after {
+        margin-top: 0px;
+        border-color: $primary-color
+      }
+
+      .bulma-field {
+        .bulma-label {
+          color: #848282;
+          font-size: 16px;
+          font-weight: 500;
+        }
+      }
+
+      .primary-field {
+        .bulma-label {
+          color: $primary-color;
+          font-size: 16px;
+          font-weight: 500;
+        }
+      }
+    }
+
+
+
+    .block-grey {
+
+      background: #ececf1;
+      padding-top: 18px;
+      padding-bottom: 18px;
+    }
+
+    .why-block {
+      // min-height: 618px;
+      padding-bottom: 38px;
+
+      .banner-image {
+        margin: auto;
+        height: 321px;
+        width: 496px;
+        background-image: url(./assets/images/home/desktop-why@3x.png);
+        background-size: 496px 321px;
+      }
+
+      ul.list li {
+        clear: both;
+        display: table;
+        width: 100%;
+        margin-bottom: 12px;
+      }
+    }
+
+
+    .latest-loan-applications {
+
+      background: #ececf1;
+      // height: 670px;
+      padding-top: 18px;
+      padding-bottom: 18px;
+
+      .loan-application-item {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid #F0F0F0;
+
+        .item-name {
+          color: $primary-color;
+          font-size: 16px;
+          font-weight: 500px;
+        }
+
+        .item-money {
+          // text-align: right;
+          color: $primary-color;
+          font-size: 16px;
+          font-weight: 500px;
+        }
+
+        .item-product {
+          // text-align: right;
+          color: #7E7E7E;
+          font-size: 16px;
+          font-weight: 500;
+        }
+
+        .item-phone {
+          color: #ADADAD;
+          font-size: 16px;
+          font-weight: 500;
+
+        }
+
+        .item-address {
+          color: #7E7E7E;
+          font-size: 16px;
+          font-weight: 500;
+        }
+      }
+
+      .loan-application-item.head {
+
+        .item-name,
+        .item-money,
+        .item-product,
+        .item-phone,
+        .item-address {
+          color: #4D4D4D;
+          font-weight: bold;
+        }
+
+      }
+    }
+
+    .get-loan-steps {
+      background: #fff;
+      padding-top: 18px;
+      padding-bottom: 18px;
+
+      .product-item {
+        text-align: center;
+        font-size: 12px;
+        color: #707070;
+      }
+
+      .circle-126 {
+        text-align: center;
+        line-height: 126px;
+        width: 126px;
+        height: 126px;
+        background: #fff;
+        -moz-border-radius: 63px;
+        -webkit-border-radius: 63px;
+        border-radius: 63px;
+        border: 3px solid #EFEFEF;
+        margin: auto;
+      }
+
+    }
+
+    .page-home {
+      .quick-apply-loan {
+        background: #ececf1;
+        // height: 658px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+
+        .banner-image {
+          background-image: url(./assets/images/home/quick@3x.png);
+          width: 407px;
+          height: 545px;
+          background-size: 407px 605px;
+        }
+
+
+      }
+    }
+
+    .page-loan-products {
+      .product-list {
+        background: #ececf1;
+        // min-height: 1134px;
+        padding-top: 38px;
+        padding-bottom: 38px;
+      }
+    }
+
+    .page-signin,
+    .page-signup {
+      .desktop-login {
+
+        display: table;
+        width: 1152px;
+        margin: auto;
+        padding: 40px 0;
+
+        .banner-image {
+          background-image: url(./assets/images/banner/banner-login@2x.jpg);
+          width: 651px;
+          height: 459px;
+          background-size: 651px 459px;
+        }
+
+
+      }
+    }
+
+    .page-signup {
+      .desktop-login {
+        .banner-image {
+          background-image: url(./assets/images/banner/banner-signup@2x.jpg);
+          width: 651px;
+          height: 718px;
+          background-size: 651px 718px;
+        }
+      }
+    }
+
+    .page-loan-product {
+
+      .desktop-loan-banner {
+        background-size: cover;
+      }
+
+      .desktop-car-pawn-banner {
+        background-image: url(./assets/images/banner/the-chap-oto@2x.jpg);
+      }
+
+      .desktop-mobilephone-pawn-banner {
+        background-image: url(./assets/images/banner/cam-dien-thoai.jpg);
+      }
+
+      .desktop-computer-pawn-banner {
+        background-image: url(./assets/images/banner/cam-may-tinh.jpg);
+      }
+
+      .desktop-car-registration-loan-banner {
+        background-image: url(./assets/images/banner/vay-theo-dang-ky-oto.jpg);
+      }
+
+      .desktop-motorbike-pawn-banner {
+        background-image: url(./assets/images/banner/the-chap-xe-may@2x.jpg);
+      }
+
+      .desktop-credit-loan-banner {
+        background-image: url(./assets/images/banner/vay-tin-chap@2x.jpg);
+      }
+
+      .desktop-household-registration-loan-banner {
+        background-image: url(./assets/images/banner/vay-theo-so-ho-khau.jpg);
+      }
+
+      .desktop-assets-pawn-banner {
+        background-image: url(./assets/images/banner/cam-tai-san@2x.jpg);
+      }
+
+      .desktop-jewel-pawn-banner {
+        background-image: url(./assets/images/banner/cam-da-quy@2x.jpg);
+      }
+
+      .desktop-watch-pawn-banner {
+        background-image: url(./assets/images/banner/cam-dong-ho.jpg);
+      }
+
+      .desktop-house-mortage-loan-banner {
+        background-image: url(./assets/images/banner/vay-the-chap-theo-so-do.jpg);
+      }
+
+      .desktop-motorbike-registration-loan-banner {
+        background-image: url(./assets/images/banner/vay-theo-dang-ky-xe-may.jpg);
+      }
+
+      .desktop-installment-loan-banner {
+        background-image: url(./assets/images/banner/vat-tra-gop.jpg);
+      }
+
+      .desktop-icloud-phone-banner {
+        background-image: url(./assets/images/banner/vay-theo-icloud-iphone.jpg);
+      }
+
+      @media (max-width: 1280px) {
+        .desktop-loan-banner {
+          background-position: -360px 0;
+        }
+      }
+
+      @media (min-width: 1281px) and (max-width: 1366px) {
+        .desktop-loan-banner {
+          background-position: -300px 0;
+        }
+      }
+
+      @media (min-width: 1367px) and (max-width: 1440px) {
+        .desktop-loan-banner {
+          background-position: -250px 0;
+        }
+      }
+
+      @media (min-width: 1441px) and (max-width: 1600px) {
+        .desktop-loan-banner {
+          background-position: -150px 0;
+        }
+      }
+
+
+      .desktop-loan-form {
+        width: 1152px;
+
+        .banner-image {
+          background-image: url(./assets/images/banner/banner-signup@2x.jpg);
+          width: 651px;
+          height: 746px;
+          background-size: contain;
+          // background-size: 651px 459px;
+        }
+
+      }
+
+      .banner-image {
+        margin: auto;
+        height: 148px;
+        width: 342px;
+        background-size: cover;
+        // border-radius: 10px;
+
+        .label {
+          background-color: #fff;
+          border-radius: 5px;
+          position: relative;
+          top: 12px;
+          left: 12px;
+          padding: 4px 8px;
+          font-size: 14px;
+          font-weight: 500;
+          color: #5D5D5D;
+          display: table
+        }
+      }
+    }
+
+    .page-credit-loan {
+      .banner-image {
+        background-image: url(./assets/images/banner/loan-banner.jpg);
+      }
+    }
+
+
+
+
+  }
+}
+
+@media (max-width: 1024.5px) {
+
+  .mf24 {
+    .topbar {
+      .am-navbar-left-icon {
+        width: 160px;
+        height: 36px;
+      }
+    }
+
+    .home-slide1 {
+      background-image: url(./assets/images/banner/loan-banner.jpg);
+      width: 100%;
+      height: 175px;
+      background-size: cover;
+    }
+
+    .home-slide2 {
+      background-image: url(./assets/images/banner/realtor-agent.jpg);
+      width: 100%;
+      height: 175px;
+      background-size: cover;
+    }
+
+    .product-grid {
+      .circle-76 {
+        text-align: center;
+        line-height: 76px;
+        width: 76px;
+        height: 76px;
+        background: #fff;
+        -moz-border-radius: 38px;
+        -webkit-border-radius: 38px;
+        border-radius: 38px;
+        border: 3px solid #EFEFEF;
+        margin: auto;
+      }
+
+      .product-item {
+        text-align: center;
+        font-size: 12px;
+        color: #707070;
+      }
+    }
+
+    .carousel-products {
+      .am-carousel-wrap {
+        position: absolute;
+        bottom: -40px;
+      }
+
+      .slider-list {
+        height: 284px !important;
+      }
+
+
+
+    }
+
+    .button-green {
+      font-weight: bold;
+      background: #71C665;
+      color: #fff
+    }
+
+    .button-green:hover,
+    .button-primary-color:hover {
+      color: #fff;
+    }
+
+    .button-green.am-button-primary::before {
+      border-color: #71C665;
+    }
+
+    .button-primary-color {
+      font-weight: bold;
+      color: #fff;
+      background: $primary-color
+    }
+
+    .button-primary-color.am-button-primary::before {
+      border-color: $primary-color;
+    }
+
+
+
+    .block-grey {
+      // background: #F8F8F8;
+      background: #ececf1;
+      padding-top: 18px;
+      padding-bottom: 12px;
+    }
+
+    .latest-loan-applications {
+
+      background: #ececf1;
+      height: 800px;
+      padding-top: 18px;
+      padding-bottom: 12px;
+
+      .loan-application-item {
+        padding-top: 16px;
+        padding-bottom: 16px;
+        border-bottom: 1px solid #F0F0F0;
+
+        .item-name {
+          color: $primary-color;
+          font-size: 16px;
+          font-weight: 500px;
+        }
+
+        .item-money {
+          text-align: right;
+          color: $primary-color;
+          font-size: 14px;
+          font-weight: 500px;
+        }
+
+        .item-product {
+          text-align: right;
+          color: #4D4D4D;
+          font-size: 12px;
+          font-weight: 500;
+        }
+
+        .item-phone {
+          color: #ADADAD;
+          font-size: 12px;
+          font-weight: 500;
+
+        }
+
+        .item-address {
+          color: #7E7E7E;
+          font-size: 12px;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .get-loan-steps {
+      background: #fff;
+      padding-top: 18px;
+      padding-bottom: 12px;
+
+      .list {
+        li {
+          padding-top: 16px;
+          padding-bottom: 16px;
+          border-bottom: 1px solid #F0F0F0;
+          clear: both;
+          display: table;
+          width: 100%;
+        }
+
+        li:last-child {
+          border-bottom: none
+        }
+      }
+    }
+
+    .bulma-select:not(.bulma-is-multiple):not(.bulma-is-loading)::after {
+      border-color: $primary-color
+    }
+
+    .bulma-select-disabled.bulma-select:not(.bulma-is-multiple):not(.bulma-is-loading)::after {
+      border-color: #A7A7A7
+    }
+
+    .bulma-field input,
+    .bulma-field select {
+      font-size: 15px;
+    }
+
+    .primary-field {
+      .bulma-select select {
+        border-color: #FFBD6F;
+        background-color: #FFFDF8;
+      }
+    }
+
+    .why-block {
+      min-height: 618px;
+
+      .banner-image {
+        margin: auto;
+        height: 171px;
+        width: 342px;
+        background-image: url(./assets/images/home/why-banner@3x.png);
+        background-size: 342px 171px;
+      }
+
+      ul.list li {
+        clear: both;
+        display: table;
+        width: 100%;
+        margin-bottom: 12px;
+      }
+    }
+
+
+    .page-home {
+      .quick-apply-loan {
+        background: #ececf1;
+        height: 658px;
+        padding-top: 18px;
+        padding-bottom: 12px;
+
+        .banner-image {
+          margin: auto;
+          height: 148px;
+          width: 345px;
+          background-image: url(./assets/images/home/quick-apply-loan@3x.png);
+          background-size: 345px 148px;
+        }
+
+
+      }
+    }
+
+    .page-loan-products {
+      .product-list {
+        background: #ececf1;
+        min-height: 1134px;
+        padding-top: 18px;
+        padding-bottom: 12px;
+      }
+    }
+
+    .page-signin,
+    .page-signup {
+
+      .signin-form {
+        min-height: 789px;
+
+        .banner-image {
+          margin: auto;
+          height: 115px;
+          width: 342px;
+          background-image: url(./assets/images/signin/banner@3x.png);
+          background-size: 342px 115px;
+        }
+      }
+    }
+
+    .page-loan-product {
+      .banner-image {
+        margin: auto;
+        height: 148px;
+        width: 342px;
+        background-size: cover;
+        border-radius: 10px;
+
+        .label {
+          background-color: #fff;
+          border-radius: 5px;
+          position: relative;
+          top: 12px;
+          left: 12px;
+          padding: 4px 8px;
+          font-size: 14px;
+          font-weight: 500;
+          color: #5D5D5D;
+          display: table
+        }
+      }
+    }
+
+    .page-credit-loan {
+      .banner-image {
+        background-image: url(./assets/images/banner/loan-banner.jpg);
+      }
+    }
+  }
+
+}
