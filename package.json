@@ -79,7 +79,8 @@
     "xxhashjs": "^0.2.2"
   },
   "scripts": {
-    "start": "BROWSER=none react-app-rewired start",
+    "start": "react-app-rewired start",
+    "start-no-browser": "BROWSER=none react-app-rewired start",
     "build": "react-app-rewired build",
     "okbuild": "./build.sh",
     "test": "react-app-rewired test",

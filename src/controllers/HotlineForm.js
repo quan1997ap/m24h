@@ -137,7 +137,6 @@ const styleLatestApplications = {
 
 const styleQuickApplyLoan = {
   background: "#fff",
-  // height: "465px",
   borderBottomLeftRadius: "5px",
   borderBottomRightRadius: "5px",
   paddingTop: "18px",
