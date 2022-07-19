@@ -232,13 +232,13 @@ class HomePage extends Component {
       isOK = false;
     }
 
-    if (applicationData.form_city_provinces === "not-selected") {
-      isOK = false;
-    }
+    // if (applicationData.form_city_provinces === "not-selected") {
+    //   isOK = false;
+    // }
 
-    if (applicationData.form_city_districts === "not-selected") {
-      isOK = false;
-    }
+    // if (applicationData.form_city_districts === "not-selected") {
+    //   isOK = false;
+    // }
 
     if (applicationData.form_full_name === "") {
       isOK = false;
