@@ -53,7 +53,7 @@ import { SpaceLg, SpaceMd, loadingIndicator } from "common/component";
 import { Desktop, Tablet, Mobile } from "common/responsive";
 import { slide as Menu } from "react-burger-menu";
 import { DFooter, MFooter } from "controllers/Footer";
-import { MTopBar, DTopBar } from "controllers/Topbar";
+import { MTopBar, DTopBar, DQuestions } from "controllers/Topbar";
 import {
   MGetLoanSteps,
   DGetLoanSteps,
@@ -86,6 +86,7 @@ import imgWhyBanner from "assets/images/home/why-banner@3x.png";
 import imgQuickApplyBannerDesktop from "assets/images/home/quick@3x.png";
 import imgQuickApplyBanner from "assets/images/home/quick-apply-loan@3x.png";
 import imgSignInBanner from "assets/images/signin/banner@3x.png";
+
 import queryString from "query-string";
 const uuidv4 = require("uuid/v4");
 const axios = require("axios");
@@ -1737,6 +1738,8 @@ function DQuickApplyLoan(props) {
                         </div>{" "}
                       </Flex.Item>{" "}
                     </Flex>
+
+                    {/* Display for desktop */}
                     <Flex css={{ display: "none" }}>
                       <Flex.Item>
                         {" "}
@@ -1827,121 +1830,7 @@ function DQuickApplyLoan(props) {
       </div>
       <div className={"block-grey home-question"}>
         <div className={"bulma-container quick-apply-loan"}>
-          <WingBlank size="lg">
-            <Accordion
-                accordion
-                openAnimation={{}}
-                className="my-accordion"
-                onChange={() => {}}
-                >
-                <Accordion.Panel
-                  header="Công ty MF24H cho vay theo những hình thức gì?"
-                  className="pad"
-                >
-                  <p>MF24H là công ty cung cấp dịch vụ vay bằng hình thức cầm cố tài sản .Đặc biệt, đối với tài sản là xe máy và ô tô, MF24H có hình thức hỗ trợ Khách hàng bằng cách cho Khách hàng mượn lại tài sản trong quá trình cầm cố để hỗ trợ khách hàng có phương tiện di chuyển.Ngoài ra, MF24H còn là công ty cung cấp rất nhiều sản phẩm bảo hiểm phi nhân thọ như bảo hiểm cứu hộ xe máy, bảo hiểm thân vỏ xe,… </p>
-                </Accordion.Panel>
-
-                <Accordion.Panel
-                  header="Vay tiền tại MF24h thì cần các giấy tờ, thủ tục gì?"
-                  className="pad"
-                >
-                  <ul>
-                    <li>
-                      Vay cầm cố bằng xe máy/ô tô: CMND/CCCD/Hộ chiếu và Đăng ký xe (cà vẹt) chính chủ.
-                    </li>
-                    <li>
-                      Vay cầm cố bằng tài sản khác: CMND/CCCD/Hộ chiếu và tài sản.
-                    </li>
-                  </ul>
-                </Accordion.Panel>
-
-                <Accordion.Panel
-                  header={
-                    <div>
-                      Vay tiền tại MF24H có bảo mật thông tin không?
-                    </div>
-                  }
-                  className="pad2"
-                >
-                  <p>MF24H cam kết bảo mật 100% thông tin khoản vay của Khách hàng. </p>
-                </Accordion.Panel>
-
-                <Accordion.Panel
-                  header={
-                    <div>
-                      Chi phí vay tại MF24h như thế nào?
-                    </div>
-                  }
-                  className="pad2"
-                >
-                  <ul>
-                    <li>Chi phí vay MF24H rất linh hoạt theo giá trị khoản vay, thời gian vay và số tiền vay với lãi suất chỉ 1.1%/tháng và các khoản chi phí vay bao gồm phí thẩm định điều kiện cho vay, phí quản lý tài sản cầm cố.</li>
-                    <li>Tổng chi phí vay tính theo dư nợ giảm dần theo bảng minh hoạ cho gói vay 10 triệu, kỳ hạn 6 tháng dưới đây:</li>
-                  </ul>
-                </Accordion.Panel>
-
-
-                <Accordion.Panel
-                  header={
-                    <div>
-                      Kể từ lúc MF24H nhận hồ sơ của tôi thì sau bao lâu tôi nhận được tiền?
-                    </div>
-                  }
-                  className="pad2"
-                >
-                  <p>Tùy từng khoản vay, thời gian để Khách hàng nhận được tiền kể từ khi đủ hồ sơ sẽ khác nhau, thông thường từ 15 – 30 phút. </p>
-                </Accordion.Panel>
-
-                <Accordion.Panel
-                  header={
-                    <div>
-                      Tôi có thể nhận tiền qua hình thức nào?
-                    </div>
-                  }
-                  className="pad2"
-                >
-                  <p>MF24H linh hoạt hình thức nhận tiền theo yêu cầu của Khách hàng như: Tiền mặt hoặc chuyển khoản. </p>
-                </Accordion.Panel>
-
-                <Accordion.Panel
-                  header={
-                    <div>
-                      MF24H vay được bao lâu hoặc thời gian vay tại MF24H được bao lâu/Kỳ hạn khoản vay tại MF24H là như thế nào?
-                    </div>
-                  }
-                  className="pad2"
-                >
-                  <p>MF24H có nhiều thời gian vay linh hoạt, tối thiểu từ 3 tháng và tối đa tới 12 tháng.</p>
-                </Accordion.Panel>
-
-                <Accordion.Panel
-                  header={
-                    <div>
-                      Tài sản của tôi MF24H trông giữ có được an toàn không?
-                    </div>
-                  }
-                  className="pad2"
-                >
-                  <ul>
-                    <li>Tùy từng loại, tài sản sẽ được bảo quản trong két hoặc kho của MF24H đảm bảo tiêu chuẩn về An toàn phòng cháy chữa cháy. Trong quá trình bảo quản, nhân viên tuyệt đối không sử dụng tài sản của Khách hàng.</li>
-                    <li>Đối với tài sản là ô tô/ xe máy, tài sản sẽ được rửa sạch sẽ trước khi bàn giao lại cho Khách hàng.</li>
-                  </ul>
-                </Accordion.Panel>
-
-                <Accordion.Panel
-                  header={
-                    <div>
-                      Số tiền tối đa có thể vay được tại MF24H là bao nhiêu?
-                    </div>
-                  }
-                  className="pad2"
-                >
-                <p>Tại F88, Khách hàng có thể vay lên tới 2 tỷ VNĐ.</p>
-                </Accordion.Panel>
-
-
-            </Accordion>
-          </WingBlank>
+            <DQuestions/>           
         </div>
       </div>
     </React.Fragment>
@@ -2073,7 +1962,7 @@ function MQuickApplyLoan(props) {
                 )}
               </div>
             </div>
-            <div className={"bulma-field"}>
+            <div className={"bulma-field"} css={{ display: "none" }}> 
               <div className={"bulma-control"}>
                 <div className={"bulma-select bulma-is-fullwidth"}>
                   <select
@@ -2090,7 +1979,7 @@ function MQuickApplyLoan(props) {
                 </div>
               </div>
             </div>
-            <div className={"bulma-field"}>
+            <div className={"bulma-field"} css={{ display: "none" }}>
               <div className={"bulma-control"}>
                 <div
                   className={
