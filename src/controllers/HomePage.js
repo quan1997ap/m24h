@@ -593,7 +593,7 @@ class HomePage extends Component {
         {/* <MLatestApplications parentState={this.state} /> */}     
         <MGetLoanSteps />
         <div style={{background: 'transparent', padding: '30px 0 40px 0'  }}>
-          <h2 class="css-1vhtdtq-MCarouselProducts" style={{textAlign: 'center', padding: '0px 0 30px 0' }}>Câu hỏi thường gặp</h2>
+          <h2 style={{textAlign: 'center', padding: '0px 0 30px 0', fontSize: '20px', color: 'rgb(255, 82, 82)' }}>Câu hỏi thường gặp</h2>
           <DQuestions/>    
         </div>
 
