@@ -200,22 +200,22 @@ let config = {
     //   period: D90,
     // },
 
-    // house_mortage_loan: {
-    //   name: "Vay thế chấp theo sổ đỏ",
-    //   money: {
-    //     "100m": 100 * ONEM,
-    //     "200m": 200 * ONEM,
-    //     "300m": 300 * ONEM,
-    //     "400m": 400 * ONEM,
-    //     "500m": 500 * ONEM,
-    //     "600m": 600 * ONEM,
-    //     "700m": 700 * ONEM,
-    //     "800m": 800 * ONEM,
-    //     "900m": 900 * ONEM,
-    //     "1000m": 1000 * ONEM,
-    //   },
-    //   period: D90,
-    // },
+    house_mortage_loan: {
+      name: "Vay thế chấp theo sổ đỏ",
+      money: {
+        "100m": 100 * ONEM,
+        "200m": 200 * ONEM,
+        "300m": 300 * ONEM,
+        "400m": 400 * ONEM,
+        "500m": 500 * ONEM,
+        "600m": 600 * ONEM,
+        "700m": 700 * ONEM,
+        "800m": 800 * ONEM,
+        "900m": 900 * ONEM,
+        "1000m": 1000 * ONEM,
+      },
+      period: D90,
+    },
 
     // credit_loan: {
     //   name: "Vay tín chấp theo lương",
