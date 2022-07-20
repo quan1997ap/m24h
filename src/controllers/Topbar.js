@@ -303,16 +303,17 @@ export function DQuestions(props) {
           className="my-accordion"
           onChange={() => {}}
           >
+
           <Accordion.Panel
-            header="Công ty MF24H cho vay theo những hình thức gì?"
-            className="pad"
+            header= {<div>Công ty MF24H cho vay theo những hình thức gì?</div>}
+            className="pad2"
           >
             <p>MF24H là công ty cung cấp dịch vụ vay bằng hình thức cầm cố tài sản .Đặc biệt, đối với tài sản là xe máy và ô tô, MF24H có hình thức hỗ trợ Khách hàng bằng cách cho Khách hàng mượn lại tài sản trong quá trình cầm cố để hỗ trợ khách hàng có phương tiện di chuyển.Ngoài ra, MF24H còn là công ty cung cấp rất nhiều sản phẩm bảo hiểm phi nhân thọ như bảo hiểm cứu hộ xe máy, bảo hiểm thân vỏ xe,… </p>
           </Accordion.Panel>
 
           <Accordion.Panel
-            header="Vay tiền tại MF24h thì cần các giấy tờ, thủ tục gì?"
-            className="pad"
+            header={<div>Vay tiền tại MF24h thì cần các giấy tờ, thủ tục gì?</div>}
+            className="pad2"
           >
             <ul>
               <li>

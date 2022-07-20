@@ -587,11 +587,15 @@ class HomePage extends Component {
           createLoanPeriodOptions={this.createLoanPeriodOptions}
           createCityProvinceOptions={this.createCityProvinceOptions}
           createDistrictOptions={this.createDistrictOptions}
-        />
+        />  
         {/* <MCarouselTop /> */}
         <MCarouselProducts />
-        {/* <MLatestApplications parentState={this.state} /> */}
+        {/* <MLatestApplications parentState={this.state} /> */}     
         <MGetLoanSteps />
+        <div style={{background: 'transparent', padding: '30px 0 40px 0'  }}>
+          <h2 class="css-1vhtdtq-MCarouselProducts" style={{textAlign: 'center', padding: '0px 0 30px 0' }}>Câu hỏi thường gặp</h2>
+          <DQuestions/>    
+        </div>
 
         <MFooter />
       </React.Fragment>

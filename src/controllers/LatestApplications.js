@@ -321,8 +321,8 @@ class LatestApplications extends Component {
   };
 
   handleFormInputChange = (event) => {
-    let name = event.target.name;
-    let value = event.target.value;
+    let name = event.target?.name;
+    let value = event.target?.value;
     this.setState(
       {
         [name]: value,
@@ -522,7 +522,7 @@ class LatestApplications extends Component {
 
         table.push(
           <option key={"city_opts" + i} value={opt.city_province_id}>
-            {opt.name}
+            {opt?.name}
           </option>
         );
       }
@@ -540,7 +540,7 @@ class LatestApplications extends Component {
 
         table.push(
           <option key={"district_opts" + i} value={opt.district_id}>
-            {opt.name}
+            {opt?.name}
           </option>
         );
       }
@@ -623,32 +623,32 @@ function DLatestApplicationItem(props) {
     >
       <Flex.Item css={cssFlexItem}>
         <div className="item-name" css={{ fontSize: "14px !important" }}>
-          {props.data.name}
+          {props.data?.name}
         </div>
       </Flex.Item>
       <Flex.Item css={cssFlexItem}>
         <div className="item-phone" css={{ fontSize: "14px !important" }}>
-          {props.data.phone}
+          {props.data?.phone}
         </div>
       </Flex.Item>
       <Flex.Item css={cssFlexItem}>
         <div className="item-address" css={{ fontSize: "11px !important" }}>
-          {props.data.address}
+          {props.data?.address}
         </div>
       </Flex.Item>
       <Flex.Item css={cssFlexItem}>
         <div className="item-money" css={{ fontSize: "14px !important" }}>
-          {props.data.money}
+          {props.data?.money}
         </div>
       </Flex.Item>
       <Flex.Item css={[cssFlexItem, cssNoBorderRight]}>
         <div className="item-product" css={{ fontSize: "11px !important" }}>
-          {props.data.product}
+          {props.data?.product}
         </div>
       </Flex.Item>
       <Flex.Item css={[cssFlexItem, cssNoBorderRight]}>
         <div className="item-product" css={{ fontSize: "11px !important" }}>
-          {props.data.visit_source}
+          {props.data?.visit_source}
         </div>
       </Flex.Item>
 
@@ -656,7 +656,7 @@ function DLatestApplicationItem(props) {
         <div className="item-product" css={{ fontSize: "11px !important" }}>
           {props.data.created_at === "Lúc"
             ? "Lúc"
-            : getTime(props.data.created_at)}
+            : getTime(props.data?.created_at)}
         </div>
       </Flex.Item>
     </Flex>
@@ -672,13 +672,13 @@ function MLatestApplicationItem(props) {
     <div css={styleListApplicationItem} className={"loan-application-item"}>
       <Flex css={{ clear: "both" }} align={"start"}>
         <Flex.Item>
-          <div className="item-name">{props.data.name}</div>
-          <div className="item-phone">{props.data.phone}</div>
-          <div className="item-address">{props.data.address}</div>
+          <div className="item-name">{props.data?.name}</div>
+          <div className="item-phone">{props.data?.phone}</div>
+          <div className="item-address">{props.data?.address}</div>
         </Flex.Item>
         <Flex.Item>
-          <div className="item-money">{props.data.money}</div>
-          <div className="item-product">{props.data.product}</div>
+          <div className="item-money">{props.data?.money}</div>
+          <div className="item-product">{props.data?.product}</div>
         </Flex.Item>
       </Flex>
 
@@ -686,9 +686,9 @@ function MLatestApplicationItem(props) {
       <div css={{ clear: "both" }}>
         {" "}
         <div className="item-address">
-          Lúc: {getTime(props.data.created_at)}
+          Lúc: {getTime(props.data?.created_at)}
         </div>
-        <div className="item-address">Source: {props.data.visit_source}</div>
+        <div className="item-address">Source: {props.data?.visit_source}</div>
       </div>
     </div>
   );
@@ -757,22 +757,19 @@ function DLatestApplications(props) {
                                   <DLatestApplicationItem
                                     data={{
                                       class: "normal",
-                                      name: value.form_full_name,
+                                      name: value?.form_full_name,
                                       // name: toCapitalLetter(
                                       //   value.form_full_name
                                       // ),
-                                      phone: value.form_mobile_phone,
-                                      address: value.address,
-                                      money:
-                                        moneyFormat(value.loan_money) + " VNĐ",
-                                      product:
-                                        config.products[value.form_product]
-                                          .name,
+                                      phone: value?.form_mobile_phone,
+                                      address: value?.address,
+                                      money: moneyFormat(value.loan_money) + " VNĐ",
+                                      product: config.products[value?.form_product]?.name,
 
-                                      visit_source: value.visit_source
+                                      visit_source: value?.visit_source
                                         ? value.visit_source
                                         : "mf24h.com",
-                                      created_at: value.created_at,
+                                      created_at: value?.created_at,
                                     }}
                                   />
                                 </li>
@@ -827,13 +824,13 @@ function MLatestApplications(props) {
                     <MLatestApplicationItem
                       data={{
                         class: "normal",
-                        name: value.form_full_name,
-                        phone: value.form_mobile_phone,
-                        address: value.address,
+                        name: value?.form_full_name,
+                        phone: value?.form_mobile_phone,
+                        address: value?.address,
                         money: moneyFormat(value.loan_money) + " VNĐ",
-                        product: config.products[value.form_product].name,
-                        created_at: value.created_at,
-                        visit_source: value.visit_source
+                        product: config?.products[value.form_product]?.name,
+                        created_at: value?.created_at,
+                        visit_source: value?.visit_source
                           ? value.visit_source
                           : "mf24h.com",
                       }}
