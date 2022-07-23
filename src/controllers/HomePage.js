@@ -552,9 +552,22 @@ class HomePage extends Component {
       <React.Fragment>
         <DTopBar />
         <DCarouselTop />
-        <DCarouselProducts />
         {/* <DLatestApplications parentState={this.state} /> */}
+        <div className={"home-question"}>
+            <div className={"bulma-container"}>
+            <h2 style={{
+                textAlign: 'center', 
+                padding: '20px 0 20px 0', 
+                fontSize: '26px', 
+                color: 'rgb(255, 82, 82)' }}>
+                Câu hỏi thường gặp
+            </h2>
+                <DQuestions/>           
+            </div>
+        </div>
+        <DCarouselProducts />
         <DGetLoanSteps />
+
         <DQuickApplyLoan
           parentState={this.state}
           handleFormInputChange={this.handleFormInputChange}
@@ -588,17 +601,16 @@ class HomePage extends Component {
           createCityProvinceOptions={this.createCityProvinceOptions}
           createDistrictOptions={this.createDistrictOptions}
         />  
-        {/* <MCarouselTop /> */}
-        <MCarouselProducts />
-        {/* <MLatestApplications parentState={this.state} /> */}     
-        <MGetLoanSteps />
         <div style={{background: 'transparent', padding: '30px 0 40px 0'  }}>
           <h2 style={{textAlign: 'center', padding: '0px 0 30px 0', fontSize: '20px', color: 'rgb(255, 82, 82)' }}>
             Câu hỏi thường gặp
           </h2>
           <DQuestions/>    
         </div>
-
+        {/* <MCarouselTop /> */}
+        <MCarouselProducts />
+        {/* <MLatestApplications parentState={this.state} /> */}     
+        <MGetLoanSteps />
         <MFooter />
       </React.Fragment>
     );
@@ -684,7 +696,7 @@ function DCarouselProducts(props) {
               color: config.color.txt_primary,
             }}
           >
-            Mời bạn chọn gói sản phảm
+            Mời bạn chọn gói sản phẩm
           </h2>
         </div>
         <WhiteSpace size="lg" />
@@ -995,7 +1007,7 @@ function MCarouselProducts(props) {
             color: config.color.txt_primary,
           }}
         >
-          Mời bạn chọn gói sản phảm
+          Mời bạn chọn gói sản phẩm
         </h2>
       </div>
       <WhiteSpace size="lg" />
@@ -1832,18 +1844,6 @@ function DQuickApplyLoan(props) {
               </div>
             </div>
           </WingBlank>
-        </div>
-      </div>
-      <div className={"home-question"}>
-        <div className={"bulma-container"}>
-          <h2 style={{
-            textAlign: 'center', 
-            padding: '20px 0 20px 0', 
-            fontSize: '26px', 
-            color: 'rgb(255, 82, 82)' }}>
-            Câu hỏi thường gặp
-          </h2>
-            <DQuestions/>           
         </div>
       </div>
     </React.Fragment>

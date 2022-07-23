@@ -675,7 +675,7 @@ function DCarouselProducts(props) {
               color: config.color.txt_primary,
             }}
           >
-            Mời bạn chọn gói sản phảm
+            Mời bạn chọn gói sản phẩm
           </h2>
         </div>
         <WhiteSpace size="lg" />
@@ -987,7 +987,7 @@ function MCarouselProducts(props) {
             color: config.color.txt_primary,
           }}
         >
-          Mời bạn chọn gói sản phảm
+          Mời bạn chọn gói sản phẩm
         </h2>
       </div>
       <WhiteSpace size="lg" />
