@@ -593,7 +593,9 @@ class HomePage extends Component {
         {/* <MLatestApplications parentState={this.state} /> */}     
         <MGetLoanSteps />
         <div style={{background: 'transparent', padding: '30px 0 40px 0'  }}>
-          <h2 style={{textAlign: 'center', padding: '0px 0 30px 0', fontSize: '20px', color: 'rgb(255, 82, 82)' }}>Câu hỏi thường gặp</h2>
+          <h2 style={{textAlign: 'center', padding: '0px 0 30px 0', fontSize: '20px', color: 'rgb(255, 82, 82)' }}>
+            Câu hỏi thường gặp
+          </h2>
           <DQuestions/>    
         </div>
 
@@ -1832,8 +1834,15 @@ function DQuickApplyLoan(props) {
           </WingBlank>
         </div>
       </div>
-      <div className={"block-grey home-question"}>
-        <div className={"bulma-container quick-apply-loan"}>
+      <div className={"home-question"}>
+        <div className={"bulma-container"}>
+          <h2 style={{
+            textAlign: 'center', 
+            padding: '20px 0 20px 0', 
+            fontSize: '26px', 
+            color: 'rgb(255, 82, 82)' }}>
+            Câu hỏi thường gặp
+          </h2>
             <DQuestions/>           
         </div>
       </div>

@@ -31,7 +31,6 @@ body {
       text-overflow: ellipsis;
 
       div {
-        padding-top: 5px;
         line-height: 25px;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -40,12 +39,11 @@ body {
   }
 
   .am-accordion .am-accordion-item .am-accordion-header div{
-      padding-top: 5px;
-      line-height: 25px;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      padding-right: 10px !important;
-      font-weight: 500;
+    white-space: break-spaces;
+    padding-top: 5px;
+    line-height: 25px;
+    padding-right: 24px !important;
+    font-weight: 500;
   }
 
   .am-accordion .am-accordion-item .am-accordion-content .am-accordion-content-box{
@@ -53,6 +51,66 @@ body {
     font-size: 16px;
   }
 
+  .page-home{
+    // basic collapse
+    .am-accordion .am-accordion-item .am-accordion-header{
+      height: unset;
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+    .am-accordion{
+      border-radius: 10px !important;
+      overflow: hidden;
+      box-shadow: 0 0 10px 0 #0000001a;
+      .am-accordion-header{
+        font-size: 16px;
+        font-weight: 700;
+        color: #333;
+        i{
+          top: calc( 50% - 8px ) !important;
+        }
+      }
+      .am-accordion-content-box{
+        padding: 16px;
+      }
+      ul {
+        list-style: disc;
+        padding: 0 16px;
+      }
+    }
+  }
+
+
+  // ant collapse
+  .page-home{
+    .ant-collapse-icon-position-end > .ant-collapse-item > .ant-collapse-header{
+      background: #fff;
+    }
+    .ant-collapse{
+      border: none !important;
+      margin: 0 16px;
+    }
+    .ant-collapse > .ant-collapse-item{
+      border-bottom: 1px solid #e0e0e0;
+    }
+    .ant-collapse-icon-position-end > .ant-collapse-item > .ant-collapse-header{
+      padding: 16px 32px 16px 4px;
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .ant-collapse-icon-position-end > .ant-collapse-item > .ant-collapse-header .ant-collapse-arrow{
+      right: 8px;
+    }
+    .ant-collapse-content{
+      border-top: none;
+    }
+    .ant-collapse-content > .ant-collapse-content-box{
+      padding: 8px 16px 8px 16px;
+    }
+    .home-question{
+      padding: 20px 0;
+    }
+  }
 }
 
 
@@ -252,25 +310,6 @@ body {
       padding-bottom: 18px;
     }
 
-    .home-question{
-      .am-accordion{
-        border-radius: 10px !important;
-        overflow: hidden;
-        box-shadow: 0 0 10px 0 #0000001a;
-        .am-accordion-header{
-          font-size: 16px;
-          font-weight: 700;
-          color: #333;
-        }
-        .am-accordion-content-box{
-          padding: 16px;
-        }
-        ul {
-          list-style: disc;
-          padding: 0 16px;
-      }
-      }
-    }
 
     .why-block {
       // min-height: 618px;
