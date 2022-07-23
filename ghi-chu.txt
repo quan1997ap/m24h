@@ -1,0 +1,21 @@
+Node Version : v13.13.0
+Install react-app-rewired before
+
+Script
+    "start": "react-app-rewired start",
+    "start-no-browser": "BROWSER=none react-app-rewired start",
+    "build": "react-app-rewired build",
+
+1. Start app : 
+    npm start
+
+
+2. Build app:
+    npm run build
+
+3. Deploy app
+  + Clone https://github.com/greentornado/mf24-web-build.git
+  + Replace with ./build folder. Keep .git folder
+  + Git push
+  + Wait 2 minutes.
+  + Check https://mf24h.com/#/
